@@ -1,0 +1,8 @@
+# Ignore virtual environment folder
+myenv/
+
+# Ignore JSON files (parsed messages and hidden phrase)
+*.json
+
+# Ignore any logs that might be generated
+*.log
