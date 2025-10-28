@@ -6,3 +6,6 @@ myenv/
 
 # Ignore any logs that might be generated
 *.log
+
+# Ignore yaml file needed to set up EC2 instance
+*.yaml

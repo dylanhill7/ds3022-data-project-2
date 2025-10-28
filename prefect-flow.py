@@ -31,7 +31,7 @@ def populate_sqs_queue():
 # them all at once; instead processes them as they become visible, which makes the monitoring a bit different because messages
 # are deleted as soon as they are visible/processed, so number of messages available for pickup should always technically be 0.
 # this is reflected in the task with a tracker that instead counts how many messages have been collected/deleted so far, and how
-# many messages are left to collect/haven't become visible yet
+# many messages are left to be collected/haven't become visible yet
 
 @task
 def monitor_sqs_queue(queue_url):
